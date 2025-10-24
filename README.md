@@ -1,2 +1,5 @@
-# microsoft365-icons
-The brand new FY25 Microsoft 365 Product Logos are here to download!
+![](files/Microsoft_365-Icon-FY26)
+# Microsoft 365 FY26 Icons
+Download here the brand new Microsoft 365 FY26 Icons!
+
+👉 [Download in PNG and SVG](index.html)
