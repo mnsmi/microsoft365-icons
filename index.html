@@ -1,37 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Microsoft 365 FY26 Icons</title>
-    <link rel="icon" href="files/website/favicon_Microsoft_Logo.webp">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download Microsoft 365 FY26 Icons</title>
+<link rel="icon" href="files/website/favicon_Microsoft_Logo.webp">
 <style>
     @font-face {
-    font-family: 'Segoe UI';
-    src: url('files/website/Segoe UI.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+        font-family: 'Segoe UI';
+        src: url('files/website/Segoe UI.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
     }
 
     body {
-        font-family: 'Segoe UI', 'Segoe UI', Arial, sans-serif;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3;
+        color: #000;
     }
-    h1 {
-        margin-top: 10px; margin-left: 10px;
+
+    /* HEADER */
+    .header {
+        text-align: center;
+        position: relative;
+    }
+
+    .header img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .header h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
         font-weight: 100;
+        font-size: 3rem;
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+        margin: 0;
     }
+
+    /* CONTENT */
+    .content {
+        padding: 20px 40px;
+        text-align: left;
+    }
+
+    .download-button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #0078d4; /* Microsoft blauw */
+        color: white;
+        font-weight: 500;
+        padding: 10px 15px;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        width: fit-content;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+    }
+
+    .download-button img {
+        width: 32px; /* icoon grootte */
+        height: 32px;
+    }
+
+    .download-button:hover {
+        background-color: #005a9e; /* donkerder blauw bij hover */
+        cursor: pointer;
+    }
+
 </style>
+</head>
 <body>
-<div class="header">
-    <img src="files/website/microsoft_365_wallpaper.jpg">
-    <h1>Microsoft 365 Logo Downloads</h1>
-</div>
-<div class="content">
-    <h3>Download here the brand new Microsoft 365 Product Logos</h3>
-    <img src="files/website/win11_folder.svg"><p>ZIP Package PNG format</p>
-    <img src="files/website/win11_folder.svg"><p>ZIP Package SVG format</p>
-</div>
+    <div class="header">
+        <img src="files/website/microsoft_365_wallpaper.jpg" alt="Microsoft 365 Wallpaper">
+        <h1>Microsoft 365 Logo Downloads</h1>
+    </div>
+
+    <div class="content">
+        <h3>Download here the brand new Microsoft 365 Product Logos</h3>
+        
+        <a class="download-button" href="files/website/MS365_PNG.zip" download>
+            <img src="files/website/win11_folder.svg" alt="PNG">
+            <span>ZIP Package PNG format</span>
+        </a>
+
+        <a class="download-button" href="files/website/MS365_SVG.zip" download>
+            <img src="files/website/win11_folder.svg" alt="SVG">
+            <span>ZIP Package SVG format</span>
+        </a>
+    </div>
 </body>
 </html>
