@@ -1,4 +1,7 @@
-<img src="files/Microsoft_365-Icon-FY26.svg" width="400"></img>
+<a href="https://mnsmi.github.io/microsoft365-icons/" target="_blank" rel="noopener noreferrer">
+  <img src="files/Microsoft_365-Icon-FY26.svg" width="400" alt="Microsoft 365 FY26 Icons - Download in PNG and SVG">
+</a>
+
 # Microsoft 365 FY26 Icons
 Download here the brand new Microsoft 365 FY26 Icons!
 
