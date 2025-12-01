@@ -3,36 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Download Microsoft 365 FY26 Icons</title>
+<title>Microsoft 365 Icons FY26</title>
 <link rel="icon" href="files/website/favicon_Microsoft_Logo.webp">
 <style>
-    @font-face {
-        font-family: 'Segoe UI';
-        src: url('files/website/Segoe UI.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
+    @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap');
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
     body {
         font-family: 'Segoe UI', Arial, sans-serif;
-        margin: 0;
-        padding: 0;
         background-color: #f3f3f3;
         color: #000;
+        line-height: 1.6;
     }
 
     /* HEADER */
     .header {
-        text-align: center;
         position: relative;
-        height: 200px;
+        height: 300px;
+        overflow: hidden;
     }
 
     .header img {
         width: 100%;
-        height: 200px;
-        display: block;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.6) blur(1px);
+        transition: transform 0.5s ease;
+    }
+
+    .header:hover img {
+        transform: scale(1.05);
     }
 
     .header h1 {
@@ -40,54 +45,86 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: white;
-        font-weight: 100;
+        color: #fff;
+        font-weight: 700;
         font-size: 3rem;
+        padding: 15px 30px;
+        background: linear-gradient(135deg, rgba(0,120,212,0.8), rgba(0,150,255,0.8));
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        text-align: center;
         text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-        margin: 0;
     }
 
     /* CONTENT */
     .content {
-        padding: 20px 40px;
-        text-align: left;
+        max-width: 900px;
+        margin: -60px auto 40px; /* trekt content iets omhoog over banner */
+        background: #fff;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        text-align: center;
+        animation: fadeIn 1s ease forwards;
+    }
+
+    .content h3 {
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: #0078d4;
     }
 
     .download-button {
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        gap: 10px;
-        background-color: #0078d4; /* Microsoft blue */
-        color: white;
-        font-weight: 500;
-        padding: 10px 15px;
-        border-radius: 6px;
-        margin-bottom: 15px;
-        width: fit-content;
+        gap: 15px;
+        background: #0078d4;
+        color: #fff;
+        font-weight: 600;
+        padding: 15px 25px;
+        border-radius: 10px;
+        margin: 15px 10px;
         text-decoration: none;
-        transition: background-color 0.2s ease;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     .download-button img {
-        width: 32px;
-        height: 32px;
+        width: 40px;
+        height: 40px;
     }
 
     .download-button:hover {
-        background-color: #005a9e;
-        cursor: pointer;
+        background: #005a9e;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     }
 
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+        0% {opacity: 0; transform: translateY(20px);}
+        100% {opacity: 1; transform: translateY(0);}
+    }
 </style>
 </head>
 <body>
+
     <div class="header">
         <img src="files/website/microsoft_365_wallpaper.jpg" alt="Microsoft 365 Wallpaper">
         <h1>Microsoft 365 Logo Downloads</h1>
     </div>
 
     <div class="content">
-        <h3>Download the official Microsoft 365 product logos below:</h3>
+        <h3>Download the official Microsoft 365 product logos:</h3>
         
         <a class="download-button" href="https://github.com/mnsmi/microsoft365-icons/raw/refs/heads/main/files/zip/FY26_PNG_icons.zip" download>
             <img src="files/website/win11_folder.svg" alt="PNG">
@@ -99,8 +136,10 @@
             <span>ZIP Package (SVG Format)</span>
         </a>
     </div>
+
+    <footer>
+        &copy; 2025 Microsoft 365 Icons Collection. All rights reserved.
+    </footer>
+
 </body>
 </html>
-
-
-
